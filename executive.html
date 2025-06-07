@@ -2,32 +2,32 @@
 <html lang="en">
 
 <head>
-<!-- *========= Meta Tags and Page Information ========= -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *========= Meta Tags and Page Information ========= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- *========= Favicon Settings ========= -->
-<link rel="apple-touch-icon" sizes="57x57" href="media/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="media/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="media/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="media/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="media/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="media/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="media/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="media/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="media/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
-<meta name="msapplication-TileImage" content="media/favicon/ms-icon-144x144.png">
+    <!-- *========= Favicon Settings ========= -->
+    <link rel="apple-touch-icon" sizes="57x57" href="media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="media/favicon/ms-icon-144x144.png">
 
-<!-- ? ------- Additional Meta Settings -------- -->
-<link rel="manifest" href="media/favicon/manifest.json">
-<meta name="msapplication-config" content="media/favicon/browserconfig.xml">
-<link rel="canonical" href="https://nickfrost2.github.io/NACOS-website/">
-<meta name="msapplication-TileColor" content="#B8FDD7">
-<meta name="theme-color" content="#B8FDD7">
+    <!-- ? ------- Additional Meta Settings -------- -->
+    <link rel="manifest" href="media/favicon/manifest.json">
+    <meta name="msapplication-config" content="media/favicon/browserconfig.xml">
+    <link rel="canonical" href="https://nickfrost2.github.io/NACOS-website/">
+    <meta name="msapplication-TileColor" content="#B8FDD7">
+    <meta name="theme-color" content="#B8FDD7">
 
     <!-- *========= External CSS Libraries ========= -->
     <!-- ? ------- Font Awesome Icons -------- -->
@@ -37,10 +37,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <!-- ? ------- AOS Animation -------- -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ? ------- AOS Animation -------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- *========= Custom Stylesheets ========= -->
     <link rel="stylesheet" href="general.css">
@@ -51,8 +51,92 @@
 
 <body id="executive-page">
 
-    <!-- * ========  Navbar ====== -->
-    <header id="Navbar">
+    <!-- *======== Navigation =========== -->
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+            <div class="container-fluid px-4">
+                <!-- *======== Navbar Brand with Tooltip =========== -->
+                <a class="navbar-brand d-flex align-items-center smart-link" href="index.html" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" title="Home">
+                    <img src="./media/logo.png" alt="Logo" width="35" height="35" class="me-2">
+                    <strong class="brand-name">NACOS</strong>
+                </a>
+
+                <!-- Toggle button -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="mobileMenu"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-between">
+                        <h5 class="offcanvas-title brand-name" id="offcanvasNavbarLabel">NACOS</h5>
+                        <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto gap-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-building me-2"></i> Department
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item smart-link" href="index.html#about-department">About
+                                            us</a>
+                                    </li>
+                                    <li><a class="dropdown-item smart-link" href="executive.html">Staff</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-handshake-angle me-2"></i> Participation
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item smart-link" href="Admission-page.html">Join Mate</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="contact.html#contest">Contest for Post</a></li>
+                                    <li><a class="dropdown-item" href="contact.html#birthday">Notify Birthday</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="contact.html#payment">Gift Us</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-question-circle me-2"></i> Help & Support
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item smart-link" href="index.html#FAQs">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="contact.html#report">Report a Problem</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html#payment">
+                                    <i class="fa fa-credit-card me-2"></i> Make Payment
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="button button2 btn btn-custom smart-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
     </header>
 
     <!-- *======= hero section ===== -->
@@ -61,19 +145,200 @@
             <div class="hero-text">
                 <h1 class="animate__animated animate__backInUp">Department Staff</h1>
                 <p>Learn about the dedicated individuals driving innovation and fostering great achievement across our
-                Department.</p>
+                    Department.</p>
             </div>
         </div>
     </section>
 
     <!-- *====== Executive Section -->
-     
+
     <section class="executive-section">
         <h1 class="legend">Department Staff</h1>
-<!-- ?------- School executives -->
+        <!-- ?------- School executives -->
         <main class="officials" id="InsertOfficialCards">
+            <!-- ~top officials cards -->
+
+            <div class="executive-container officials">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-xl-3 g-3">
+                    <div class="col">
+                        <div class="executive-cards">
+                            <div class="card h-100">
+                                <div class="executive-img-container">
+                                    <img src="media/vc.jpg" class="card-img-top img-fluid" alt="Executive Image">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Avery Thompson</h5>
+                                    <p class="card-text">Vice Chancellor <br> Federal University Oye-Ekiti (FUOYE)</p>
+                                    <button class="btn button" data-bs-toggle="modal" data-bs-target="#modalVC">
+                                        See More <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="executive-cards">
+                            <div class="card h-100">
+                                <div class="executive-img-container">
+                                    <img src="media/deen.jpg" class="card-img-top img-fluid" alt="Executive Image">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Blake Peterson</h5>
+                                    <p class="card-text">Deen<br> Faculty Of Science</p>
+                                    <button class="btn button" data-bs-toggle="modal" data-bs-target="#modaldeen">
+                                        See More <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="executive-cards">
+                            <div class="card h-100">
+                                <div class="executive-img-container">
+                                    <img src="media/hod.jpg" class="card-img-top img-fluid" alt="Executive Image">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Casey Rodriguez</h5>
+                                    <p class="card-text">Head Of Department <br> Department Of Computer Science</p>
+                                    <button class="btn button" data-bs-toggle="modal" data-bs-target="#modalHOD">
+                                        See More <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *Modals -->
+            <!-- *VC Modal -->
+            <div class="modal fade" id="modalVC" tabindex="-1" aria-labelledby="modalVC" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content custom-modal">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalVCLabel">Vice Chancellor</h1>
+                            <button type="button" class="btn-close custom-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="container-fluid modal-content-container">
+                                <div class="modal-img">
+                                    <img src="media/vc.jpg" alt="">
+                                </div>
+                                <div class="modal-info">
+                                    <h5>Avery Thompson</h5>
+                                    <ul>
+                                        <li>Post: Vice Chancellor</li>
+                                        <li>Title: Professor</li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-brands fa-telegram"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-brands fa-square-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn button" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *DEEN Modal -->
+            <div class="modal fade" id="modaldeen" tabindex="-1" aria-labelledby="modaldeenLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content custom-modal">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modaldeenLabel">Deen</h1>
+                            <button type="button" class="btn-close custom-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="container-fluid modal-content-container">
+                                <div class="modal-img">
+                                    <img src="media/deen.jpg" alt="">
+                                </div>
+                                <div class="modal-info">
+                                    <h5>Blake Peterson</h5>
+                                    <ul>
+                                        <li>Post: Deen</li>
+                                        <li>Title: Professor</li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-brands fa-telegram"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-brands fa-square-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn button" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *HOD Modal -->
+            <div class="modal fade" id="modalHOD" tabindex="-1" aria-labelledby="modalHODLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content custom-modal">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalHODLabel">Head Of Department</h1>
+                            <button type="button" class="btn-close custom-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="container-fluid modal-content-container">
+                                <div class="modal-img">
+                                    <img src="media/hod.jpg" alt="">
+                                </div>
+                                <div class="modal-info">
+                                    <h5>Casey Rodriguez</h5>
+                                    <ul>
+                                        <li>Post: Head Of Department</li>
+                                        <li>Title: Professor</li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa-brands fa-telegram"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fa-brands fa-square-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn button" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-<!-- ?------- Department executives -->
+        <!-- ?------- Department executives -->
 
         <div class="executive-container exe-cont">
             <!-- <h1 class="profile-showcase__title">Department Executives</h1> -->
@@ -83,8 +348,7 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-1.jpg" alt="President"
-                                class="card-img-top img-fluid" alt="President">
+                            <img src="media/exe-1.jpg" alt="President" class="card-img-top img-fluid" alt="President">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Nicholas Benson Oluwaferanmi</h5>
@@ -104,11 +368,15 @@
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top" title="Christian"></i> <i
-                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top" title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
                                 <p><a href="https://nickfrost-portfolio.vercel.app/"><i
                                             class="fa-solid fa-globe-pointer"></i></a> &ensp;
@@ -135,8 +403,8 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-2.jpg" alt="Vice President"
-                                class="card-img-top img-fluid" alt="Vice President">
+                            <img src="media/exe-2.jpg" alt="Vice President" class="card-img-top img-fluid"
+                                alt="Vice President">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Benson Nicholas Oluwaferanmi</h5>
@@ -149,22 +417,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -177,7 +450,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -186,8 +459,8 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-3.jpg" alt="General Secretary"
-                                class="card-img-top img-fluid" alt="General Secretary">
+                            <img src="media/exe-3.jpg" alt="General Secretary" class="card-img-top img-fluid"
+                                alt="General Secretary">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Oluwaferanmi Nicholas Benson</h5>
@@ -200,22 +473,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -228,7 +506,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -237,8 +515,7 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-4.jpg" alt="Financial Secretary"
-                                class="card-img-top img-fluid">
+                            <img src="media/exe-4.jpg" alt="Financial Secretary" class="card-img-top img-fluid">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Oluwaferanmi Benson Nicholas</h5>
@@ -251,22 +528,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -279,7 +561,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -288,8 +570,7 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-5.jpg" alt="Treasurer"
-                                class="card-img-top img-fluid" alt="Treasurer">
+                            <img src="media/exe-5.jpg" alt="Treasurer" class="card-img-top img-fluid" alt="Treasurer">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Nicholas Oluwaferanmi Benson</h5>
@@ -302,22 +583,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -330,7 +616,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -339,8 +625,7 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-7.jpg" alt="PRO"
-                                class="card-img-top img-fluid" alt="PRO">
+                            <img src="media/exe-7.jpg" alt="PRO" class="card-img-top img-fluid" alt="PRO">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Benson Oluwaferanmi Nicholas</h5>
@@ -349,40 +634,45 @@
                                 More</button>
                         </div>
 
-                    <div class="card__overlay">
-                        <button class="close-details">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    
-                        <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
-                        <div class="detail-section">
-                            <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
-                            <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
-                            <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
-                            <p>
-                                <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Muslim"></i>
-                                <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                    class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
-                            </p>
-                            <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
-                                </a> &ensp;
-                                <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                                &ensp;
-                                <a href="https://facebook.com/yourprofile"><i class="fa-brands fa-facebook"></i></a>
-                                &ensp;
-                                <a href="mailto:bensonicholas206@gmail.com"> <i class="fas fa-envelope"></i>
-                                </a> &ensp;
-                                <a href="https://wa.me/+2349067529053"><i class="fa-brands fa-square-whatsapp"></i>
-                                </a>
-                            </p>
+                        <div class="card__overlay">
+                            <button class="close-details">
+                                <i class="fas fa-times"></i>
+                            </button>
+
+                            <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
+                            <div class="detail-section">
+                                <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
+                                <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
+                                <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
+                                <p>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
+                                </p>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
+                                    </a> &ensp;
+                                    <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    &ensp;
+                                    <a href="https://facebook.com/yourprofile"><i class="fa-brands fa-facebook"></i></a>
+                                    &ensp;
+                                    <a href="mailto:bensonicholas206@gmail.com"> <i class="fas fa-envelope"></i>
+                                    </a> &ensp;
+                                    <a href="https://wa.me/+2349067529053"><i class="fa-brands fa-square-whatsapp"></i>
+                                    </a>
+                                </p>
+                            </div>
+
                         </div>
-                    
-                    </div>
                     </div>
                 </div>
 
@@ -390,8 +680,7 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-6.jpg" alt="Librarian"
-                                class="card-img-top img-fluid" alt="Librarian">
+                            <img src="media/exe-6.jpg" alt="Librarian" class="card-img-top img-fluid" alt="Librarian">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Oluwaferanmi Nicholas Benson</h5>
@@ -400,40 +689,45 @@
                                 More</button>
                         </div>
 
-                    <div class="card__overlay">
-                        <button class="close-details">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    
-                        <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
-                        <div class="detail-section">
-                            <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
-                            <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
-                            <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
-                            <p>
-                                <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Muslim"></i>
-                                <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                    class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
-                            </p>
-                            <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
-                                </a> &ensp;
-                                <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                                &ensp;
-                                <a href="https://facebook.com/yourprofile"><i class="fa-brands fa-facebook"></i></a>
-                                &ensp;
-                                <a href="mailto:bensonicholas206@gmail.com"> <i class="fas fa-envelope"></i>
-                                </a> &ensp;
-                                <a href="https://wa.me/+2349067529053"><i class="fa-brands fa-square-whatsapp"></i>
-                                </a>
-                            </p>
+                        <div class="card__overlay">
+                            <button class="close-details">
+                                <i class="fas fa-times"></i>
+                            </button>
+
+                            <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
+                            <div class="detail-section">
+                                <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
+                                <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
+                                <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
+                                <p>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
+                                </p>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
+                                    </a> &ensp;
+                                    <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    &ensp;
+                                    <a href="https://facebook.com/yourprofile"><i class="fa-brands fa-facebook"></i></a>
+                                    &ensp;
+                                    <a href="mailto:bensonicholas206@gmail.com"> <i class="fas fa-envelope"></i>
+                                    </a> &ensp;
+                                    <a href="https://wa.me/+2349067529053"><i class="fa-brands fa-square-whatsapp"></i>
+                                    </a>
+                                </p>
+                            </div>
+
                         </div>
-                    
-                    </div>
                     </div>
                 </div>
 
@@ -441,8 +735,8 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-8.jpg" alt="Asst. Gen Sec"
-                                class="card-img-top img-fluid" alt="Asst. Gen Sec">
+                            <img src="media/exe-8.jpg" alt="Asst. Gen Sec" class="card-img-top img-fluid"
+                                alt="Asst. Gen Sec">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Nicholas Benson Oluwaferanmi</h5>
@@ -455,22 +749,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -483,7 +782,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -492,8 +791,8 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-9.jpg" alt="Welfare Director"
-                                class="card-img-top img-fluid" alt="Welfare Director">
+                            <img src="media/exe-9.jpg" alt="Welfare Director" class="card-img-top img-fluid"
+                                alt="Welfare Director">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Benson Nicholas Oluwaferanmi</h5>
@@ -506,22 +805,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -534,7 +838,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -543,8 +847,8 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-10.jpg" alt="Social Director"
-                                class="card-img-top img-fluid" alt="Social Director">
+                            <img src="media/exe-10.jpg" alt="Social Director" class="card-img-top img-fluid"
+                                alt="Social Director">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Oluwaferanmi Benson Nicholas</h5>
@@ -557,22 +861,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -585,7 +894,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -594,8 +903,7 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-11.jpg"
-                                class="card-img-top img-fluid" alt="Sport Director">
+                            <img src="media/exe-11.jpg" class="card-img-top img-fluid" alt="Sport Director">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Nicholas Oluwaferanmi Benson</h5>
@@ -608,22 +916,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -636,7 +949,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -645,8 +958,7 @@
                 <div class="col" data-aos="fade-up">
                     <div class="card">
                         <div class="executive-img-container">
-                            <img src="media/exe-12.jpg"
-                                class="card-img-top img-fluid" alt="Software Director">
+                            <img src="media/exe-12.jpg" class="card-img-top img-fluid" alt="Software Director">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Nicholas Oluwaferanmi Benson</h5>
@@ -659,22 +971,27 @@
                             <button class="close-details">
                                 <i class="fas fa-times"></i>
                             </button>
-                        
+
                             <h5 class="details-title">Nicholas Benson Oluwaferanmi</h5>
                             <div class="detail-section">
                                 <p><i class="fas fa-briefcase"></i> <strong>Position:</strong> President</p>
                                 <p><i class="fas fa-building"></i> <strong>Department:</strong> Administration</p>
                                 <p><i class="fa-solid fa-chart-simple"></i> <strong>Level:</strong> 200</p>
                                 <p>
-                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Christian"></i> <i class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip" data-bs-placement="top"
-                                        title="Muslim"></i>
-                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip" data-bs-placement="top" title="Male"></i> <i
-                                        class="fa-solid fa-person-dress" data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
-                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip" data-bs-placement="top" title="March"></i>
+                                    <!-- Religion--> <i class="fa-solid fa-cross" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Christian"></i> <i
+                                        class="fa-solid fa-star-and-crescent" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Muslim"></i>
+                                    <!-- gender--> <i class="fa-solid fa-person" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Male"></i> <i class="fa-solid fa-person-dress"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Female"></i>
+                                    <!-- month--> <i class="fa-solid fa-fish" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="March"></i>
                                 </p>
-                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i class="fa-solid fa-globe-pointer"></i></a> &ensp;
-                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i class="fa-brands fa-linkedin"></i>
+                                <p><a href="https://nickfrost-portfolio.vercel.app/"><i
+                                            class="fa-solid fa-globe-pointer"></i></a> &ensp;
+                                    <a href="https://www.linkedin.com/in/benson-nicholas-oluwaferanmi/"><i
+                                            class="fa-brands fa-linkedin"></i>
                                     </a> &ensp;
                                     <a href="https://twitter.com/yourprofile"><i class="fa-brands fa-x-twitter"></i>
                                     </a>
@@ -687,7 +1004,7 @@
                                     </a>
                                 </p>
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -706,8 +1023,7 @@
             </button>
             <div class="profile-carousel__container" id="profile-carousel">
                 <div class="profile-card" id="profile-card-1">
-                    <img src="media/gov-1.jpg" alt="Class Governor"
-                        class="profile-card__image">
+                    <img src="media/gov-1.jpg" alt="Class Governor" class="profile-card__image">
                     <div class="profile-card__content">
                         <h3 class="profile-card__name">Governor Name</h3>
                         <p class="profile-card__role">Governor</p>
@@ -737,8 +1053,7 @@
                 </div>
 
                 <div class="profile-card" id="profile-card-2">
-                    <img src="media/gov-2.jpg" alt="Class Governor"
-                        class="profile-card__image">
+                    <img src="media/gov-2.jpg" alt="Class Governor" class="profile-card__image">
                     <div class="profile-card__content">
                         <h3 class="profile-card__name">Governor Name</h3>
                         <p class="profile-card__role">Deputy Governor</p>
@@ -768,8 +1083,7 @@
                 </div>
 
                 <div class="profile-card" id="profile-card-3">
-                    <img src="media/gov-3.jpg" alt="Class Governor"
-                        class="profile-card__image">
+                    <img src="media/gov-3.jpg" alt="Class Governor" class="profile-card__image">
                     <div class="profile-card__content">
                         <h3 class="profile-card__name">Governor Name</h3>
                         <p class="profile-card__role">Governor</p>
@@ -799,8 +1113,7 @@
                 </div>
 
                 <div class="profile-card" id="profile-card-4">
-                    <img src="media/gov-4.jpg" alt="Class Governor"
-                        class="profile-card__image">
+                    <img src="media/gov-4.jpg" alt="Class Governor" class="profile-card__image">
                     <div class="profile-card__content">
                         <h3 class="profile-card__name">Governor Name</h3>
                         <p class="profile-card__role">Deputy Governor</p>
@@ -830,8 +1143,7 @@
                 </div>
 
                 <div class="profile-card" id="profile-card-5">
-                    <img src="media/gov-5.jpg" alt="Class Governor"
-                        class="profile-card__image">
+                    <img src="media/gov-5.jpg" alt="Class Governor" class="profile-card__image">
                     <div class="profile-card__content">
                         <h3 class="profile-card__name">Governor Name</h3>
                         <p class="profile-card__role">Governor</p>
@@ -861,8 +1173,7 @@
                 </div>
 
                 <div class="profile-card" id="profile-card-6">
-                    <img src="media/gov-6.jpg" alt="Class Governor"
-                        class="profile-card__image">
+                    <img src="media/gov-6.jpg" alt="Class Governor" class="profile-card__image">
                     <div class="profile-card__content">
                         <h3 class="profile-card__name">Governor Name</h3>
                         <p class="profile-card__role">Deputy Governor</p>
@@ -892,8 +1203,7 @@
                 </div>
 
                 <div class="profile-card" id="profile-card-7">
-                    <img src="media/gov-7.jpg" alt="Class Governor"
-                        class="profile-card__image">
+                    <img src="media/gov-7.jpg" alt="Class Governor" class="profile-card__image">
                     <div class="profile-card__content">
                         <h3 class="profile-card__name">Governor Name</h3>
                         <p class="profile-card__role">Governor</p>
@@ -923,8 +1233,7 @@
                 </div>
 
                 <div class="profile-card" id="profile-card-8">
-                    <img src="media/gov-8.jpg" alt="Class Governor"
-                        class="profile-card__image">
+                    <img src="media/gov-8.jpg" alt="Class Governor" class="profile-card__image">
                     <div class="profile-card__content">
                         <h3 class="profile-card__name">Governor Name</h3>
                         <p class="profile-card__role">Deputy Governor</p>
@@ -964,22 +1273,131 @@
     </section>
 
     <div class="join_button text-center" id="governor-section">
-    
-    
+
+
     </div>
 
     <br><br><br><br><br>
-        <!-- *footer -->
-        <footer id="insertfooter">
-        
-        </footer>
+    <!-- *footer -->
+    <footer>
+        <!-- *footer starts -->
+        <div class="footer_wrapper">
+
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-5">
+
+                    <!-- Right Section: Newsletter and Socials -->
+                    <div class="col-md-4 mb-3">
+                        <!-- Logo and Quick Description -->
+                        <div class="footer-column footer-brand">
+                            <a class="navbar-brand d-flex align-items-center smart-link" href="#index-page"
+                                data-fallback="index.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Home">
+                                <img src="./media/logo.png" alt="Logo" width="50" height="50" class="me-2">
+                                <h1>
+                                    <span class="brand-name text-uppercase footer-brand-name">NACOS</span>
+                                </h1>
+                            </a>
+                            <p class="footer-tagline">Networking the world since 1990.</p>
+                        </div>
+                        <h4 class="text-uppercase join-text">Join Newsletter</h4>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Subscribe" required>
+                                <button type="submit">
+                                    <i class="fa fa-paper-plane"></i>
+                                </button>
+
+                            </div>
+                            <div class="newsletter-info">
+                                <i class="fa fa-lock"></i>
+                                <small>We respect your privacy and will never share your information.</small>
+                            </div>
+                        </form>
+                        <div class="footer-contact">
+                            <p><i class="fa fa-envelope"></i> contact@nacos.edu</p>
+                            <p><i class="fa fa-phone"></i> +234 (906) 752-9053</p>
+                            <p><i class="fa fa-map-marker-alt"></i> Oye-Ekiti, Nigeria</p> <!-- Added address -->
+                        </div>
+                    </div>
+
+                    <!-- Left Section: Link Groups (takes more visual width) -->
+                    <div class="col-md-8">
+                        <div class="row row-cols-2 row-cols-sm-4 g-5">
+                            <div class="col">
+                                <h6 class="text-uppercase">Resources</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Syllabus</a>
+                                    </li>
+                                    <li><a href="Library.html"
+                                            class="footer_link text-light text-decoration-none">Library</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Portal</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Results</a></li>
+                                    <li><a href="contact.html"
+                                            class="footer_link text-light text-decoration-none">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h6 class="text-uppercase">Programs</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#"
+                                            class="footer_link text-light text-decoration-none">Undergraduate</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Postgraduate</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Diploma</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Scholarships</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Research</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h6 class="text-uppercase">Community</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Clubs</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Events</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Alumni</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Careers</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Volunteer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h6 class="text-uppercase">Support</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="contact.html" class="footer_link text-light text-decoration-none">Help
+                                            Center</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Terms of Use</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Feedback</a>
+                                    </li>
+                                    <li><a href="index.html#FAQs"
+                                            class="footer_link text-light text-decoration-none">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- ?bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
         </script>
-        <!-- ?AOS js link -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ?AOS js link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- ?custom js -->
 

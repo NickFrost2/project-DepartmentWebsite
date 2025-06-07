@@ -56,7 +56,89 @@
 
     <!-- *======== Navigation =========== -->
     <!-- Navbar will be inserted by JavaScript -->
-    <header id="Navbar">
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+            <div class="container-fluid px-4">
+                <!-- *======== Navbar Brand with Tooltip =========== -->
+                <a class="navbar-brand d-flex align-items-center smart-link" href="index.html"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home">
+                    <img src="./media/logo.png" alt="Logo" width="35" height="35" class="me-2">
+                    <strong class="brand-name">NACOS</strong>
+                </a>
+        
+                <!-- Toggle button -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+        
+                <!-- Offcanvas menu -->
+                <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="mobileMenu"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-between">
+                        <h5 class="offcanvas-title brand-name" id="offcanvasNavbarLabel">NACOS</h5>
+                        <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+        
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto gap-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-building me-2"></i> Department
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item smart-link" href="#about-department"
+                                            data-fallback="index.html#about-department">About us</a></li>
+                                    <li><a class="dropdown-item smart-link" href="executive.html">Staff</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-handshake-angle me-2"></i> Participation
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item smart-link" href="Admission-page.html">Join Mate</a></li>
+                                    <li><a class="dropdown-item" href="contact.html#contest">Contest for Post</a></li>
+                                    <li><a class="dropdown-item" href="contact.html#birthday">Notify Birthday</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="contact.html#payment">Gift Us</a></li>
+        
+                                </ul>
+                            </li>
+        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa fa-question-circle me-2"></i> Help & Support
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item smart-link" href="index.html#FAQs">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="contact.html#report">Report a Problem</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html#payment">
+                                    <i class="fa fa-credit-card me-2"></i> Make Payment
+                                </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="button button2 btn btn-custom smart-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
     </header>
 
     <!-- *========= Hero Carousel Section ========= -->
@@ -73,7 +155,7 @@
                             <h1 class="animate__animated animate__backInUp">Department of Computer Science.</h1>
                             <p>The Department of Computer Science is a vibrant department known for its success in all
                                 technology related areas in the university</p>
-                            <p><a class="btn btn-lg button" href="#">Know more</a></p>
+                            <p><a href="index.html#about-department" class="button">Know More</a></p>
                         </div>
                     </div>
                 </div>
@@ -600,8 +682,110 @@
 
 
     <!-- *======== footer ===== -->
-    <footer id="insertfooter">
-
+    <footer>
+        <div class="footer_wrapper">
+        
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-5">
+        
+                    <!-- Right Section: Newsletter and Socials -->
+                    <div class="col-md-4 mb-3">
+                        <!-- Logo and Quick Description -->
+                        <div class="footer-column footer-brand">
+                            <a class="navbar-brand d-flex align-items-center smart-link" href="#index-page"
+                                data-fallback="index.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Home">
+                                <img src="./media/logo.png" alt="Logo" width="50" height="50" class="me-2">
+                                <h1>
+                                    <span class="brand-name text-uppercase footer-brand-name">NACOS</span>
+                                </h1>
+                            </a>
+                            <p class="footer-tagline">Networking the world since 1990.</p>
+                        </div>
+                        <h4 class="text-uppercase join-text">Join Newsletter</h4>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Subscribe" required>
+                                <button type="submit">
+                                    <i class="fa fa-paper-plane"></i>
+                                </button>
+        
+                            </div>
+                            <div class="newsletter-info">
+                                <i class="fa fa-lock"></i>
+                                <small>We respect your privacy and will never share your information.</small>
+                            </div>
+                        </form>
+                        <div class="footer-contact">
+                            <p><i class="fa fa-envelope"></i> contact@nacos.edu</p>
+                            <p><i class="fa fa-phone"></i> +234 (906) 752-9053</p>
+                            <p><i class="fa fa-map-marker-alt"></i> Oye-Ekiti, Nigeria</p> <!-- Added address -->
+                        </div>
+                    </div>
+        
+                    <!-- Left Section: Link Groups (takes more visual width) -->
+                    <div class="col-md-8">
+                        <div class="row row-cols-2 row-cols-sm-4 g-5">
+                            <div class="col">
+                                <h6 class="text-uppercase">Resources</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Syllabus</a>
+                                    </li>
+                                    <li><a href="Library.html" class="footer_link text-light text-decoration-none">Library</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Portal</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Results</a></li>
+                                    <li><a href="contact.html" class="footer_link text-light text-decoration-none">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h6 class="text-uppercase">Programs</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Undergraduate</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Postgraduate</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Diploma</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Scholarships</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Research</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h6 class="text-uppercase">Community</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Clubs</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Events</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Alumni</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Careers</a></li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Volunteer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h6 class="text-uppercase">Support</h6>
+                                <ul class="list-unstyled">
+                                    <li><a href="contact.html" class="footer_link text-light text-decoration-none">Help
+                                            Center</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Terms of Use</a>
+                                    </li>
+                                    <li><a href="#" class="footer_link text-light text-decoration-none">Feedback</a>
+                                    </li>
+                                    <li><a href="index.html#FAQs" class="footer_link text-light text-decoration-none">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- ?bootstrap js link -->
